@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000;
+    scroll-behavior: smooth;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: 200;
+}
+
+
+/* Reusable content */
+h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+h3::after{
+    text-align: center;
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: #ff7200;
+    margin: 10px auto;
+}
+.btn-org{
+    background-color: #ff7200;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #000;
+    transition: 0.2s ease;
+}
+.btn-org:hover{
+    background-color: #fff;
+}
+.btn-wht{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #000;
+    transition: 0.2s ease;
+}
+.btn-wht:hover{
+    background-color: #ff7200;
+}
+.clear{
+    clear: both;
+    display: block;
+}
+
+
+
+/* Header */
+.header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6)50%) ,url(b4.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial;
+    font-weight: 200;
+}
+
+/* head- div- divider */
+.header .head{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header .head .name{
+    margin-top: 10px;
+    width: 30%;
+    float: left;
+}
+.header .head .about{
+    width: 33%;
+    float: left;
+    margin-top: 20px;
+}
+.header .head .dropdown{
+    width: 17%;
+    float: left;
+    transition: 0.2s ease;
+    margin-top: 20px;
+    z-index: 1;
+}
+.header .head .signup{
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+}
+
+
+/* div name */
+.name h1{
+    font-size: 35px;
+    color: #ff7200;
+    transition: 0.2s ease;
+    text-align: center;
+    display: inline-block;
+}
+.name h1:hover{
+    transform: scale(1.1);
+}
+
+/* div about*/
+.about .a-tags{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about a{
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 auto;
+    transition: 0.2s ease;
+}
+.about a:hover{
+    color: #ff7200;
+}
+.about a:last-child{
+    margin-right: 0;
+}
+.about a:first-child{
+    margin-left: 0;
+}
+
+
+/* div dropdown */
+.dropdown .drop-btn{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown .dropdown-content{
+    background-color:#ffffff ;
+    width: 80%;
+    margin: 10px auto;
+    border: none;
+    border-radius: 20px;
+    display: none;
+}
+.dropdown:hover .drop-btn{
+    color: #ff7200;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown .dropdown-content a{
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+.dropdown .dropdown-content li:hover a{
+    color: #fff;
+}
+.dropdown .dropdown-content ul{
+    list-style: none;
+    text-align: center;
+}
+.dropdown .dropdown-content ul li{
+    padding: 5px 0;
+    line-height: 30px;
+    transition: 0.2s ease;
+}
+.dropdown .dropdown-content ul li:hover{
+    background-color: #ff7200;
+}
+.dropdown .dropdown-content ul li:first-child:hover{
+    border-radius: 20px 20px 0 0;
+}
+.dropdown .dropdown-content ul li:last-child:hover{
+    border-radius:0 0 20px 20px;
+}
+
+/* div signup */
+.signup .btn-org{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* details */
+.details{
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+}
+.details .details-container{
+    width:60%;
+    float: left;
+    margin-left: 130px;
+}
+.details .details-container h2{
+    color: #5787E8;
+    font-size: 50px;
+    font-weight: bold;
+}
+.details .details-container p{
+    color: #fff;
+    padding: 30px 0;
+    font-size: 17px;
+}
+.details .details-container button{
+    display: block;
+    margin-bottom: 60px;
+}
+.details .details-container a{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    border-left: 2px solid #ff7200;
+    border-right: 2px solid #ff7200;
+    padding: 5px;
+}
+.details .details-container a:hover{
+    border: none;
+    border-bottom: 2px solid #ff7200;
+}
+.details .deteils-image{
+    width:40%;
+    float: right;
+}
+.details  img{
+    width: 250px;
+    border: 3px solid #660A34 ;
+    border-radius: 100%;
+    margin-top: 90px;
+}
+.details  img:hover{
+    transform: scale(1.1);
+}
+
+/* nextpage1 */
+.nextpage1{
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%), url(b1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nextpage1-container{
+    width: 90%;
+    margin: 80px auto 0 auto;
+
+}
+.nextpage1-container h1{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    color: #000000;
+    border: none;
+    background-color: #ff7200;
+    padding: 10px 0;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.nextpage1-container .div1, .div2, .div3, .div4{
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    padding: 10px ;
+}
+
+.nextpage1-container img{
+    width:400px ;
+    height: 270px;
+    display: block;
+    margin: 0 auto;  
+    transition: 0.2s ease;
+}
+.nextpage1-container img:hover{
+    transform: scale(1.1);
+}
+
+
+/* nextpage2 */
+.nextpage2{
+    height: 80vh;
+    background-color: #445069;
+    width: 100%;
+}
+.location-container{
+    margin-top: 100px;
+}
+.location-container iframe{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border: none;
+    border-radius: 10px ;
+    box-shadow: 1px 1px 5px 5px rgba(48, 47, 47, 0.532);
+}
+
+
+/* footer */
+
+
+.footer{
+    background-color: #415258;
+    height: 7vh;
+
+}
+
+.footer h1{
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    width: 60%;
+    float: left;
+}
+
+
+.footer a{
+    float: left;
+    margin: 20px 10px ;
+}
+
+a i{
+    color: #ff7200;
+    font-size: 25px;
+    transition: .2s ease;
+}
+
+
+.footer a i:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
